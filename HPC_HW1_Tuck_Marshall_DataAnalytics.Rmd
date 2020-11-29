@@ -1,0 +1,67 @@
+---
+title: "HPC HW1: Data Analytics II"
+author: "Marshall Tuck"
+date: "11/29/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Problem 1: Monte Carlo warm up (30 pts)
+
+Here we want to use Monte Carlo methods to reliably estimate pi to the 5th decimal place using Monte Carlo integration via the integral below.
+
+Report your final N, pi estimate, and the reliability of the algorithm for the two methods. What did you parallelize on? Did you control the seed? How?
+
+```{r}
+readRDS("Output Problem 1.RDS")
+```
+
+# Problem 2: Monte Carlo algorithm comparison (20 pts)
+
+Using the final N determined in Problem 1, determine what precision and accuracy are obtained for the dart method and beer toss approaches. Report a table of accurate digits and the frequency (in %) of obtaining that accuracy for each method, ie 3.1 - 1 digit - 100%, 3.14 - 2 digits … in table form.
+
+```{r}
+readRDS("Output Problem 2.RDS")
+```
+
+# Problem 3: Neural Networks for linear regression (10 pts)
+
+I demonstrated you could use neural network frameworks to setup and solve linear regression problems. In what situations might this be appropriate? In the image classification section, we use other activation functions, hidden layers, etc. Why might you use some of these in regression problems? What problems do you see?
+
+```{r}
+####Text Here
+```
+
+# Problem 4: Neural Networks for image classification (25 pts)
+
+You need to:
+
+Modify the R script (and perhaps the job script) to accept runtime arguments to vary hyperparameters you think that might have an effect on the results. Two that come to mind right off are batch size and epochs. You might consider powers of 2 between 16 and 1024 for batch size and epocs between 50 and 300. There are other hyperparameters to play with. Have fun with that.
+
+Add a layer to the network and see if you can do better. Are there hyperparameters for this you should sweep?
+
+Add to the code to give predictions on the test set. You should be able to use the clothing_predictions.Rmd code as a guide. We all learn by copying others, so fair game.3.
+
+```{r}
+####Text Here
+```
+
+# Problem 5: Neural Networks for image classification (10 pts)
+
+Create a summary table of the various hyperparameters you tried along with the prediction accuracy on the test set. What combination gave the best prediction accuracy? Create a plot of the final (most accurate training run). What do you see in the plot? Is there any evidence of overfitting? Are there other metrics we should consider in plotting?
+
+```{r}
+readRDS("Output Problem 5.RDS")
+```
+
+# Problem 6: Neural Networks for image classification (5 pts)
+
+What we have done so far is identify the subject in the picture. Many pictures are scenes with multiple subjects/objects. If we want to identify multiple subjects in a single large image, what would be your process? Write down your algorithm. No math, just general process as you would explain it to your mother.
+
+```{r}
+####Text Here
+```
+
